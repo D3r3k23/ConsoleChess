@@ -3,9 +3,9 @@ if [[ $1 == "-d" ]]; then
 fi
 
 if [[ "$debug" == true ]]; then
-    executable_path="build/bin/Linux/Debug/ConsoleChess"
+    executable_path="bin/Debug/ConsoleChess"
 else
-    executable_path="build/bin/Linux/Release/ConsoleChess"
+    executable_path="bin/Release/ConsoleChess"
 fi
 
 if [[ -x $executable_path ]]; then

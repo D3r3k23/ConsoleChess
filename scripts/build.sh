@@ -2,12 +2,12 @@ if [[ $1 == "-d" ]]; then
     debug=true
 fi
 
-mkdir -p build
-
 if [[ "$debug" == true ]]; then
-    cmake -DCMAKE_BUILD_TYPE=Debug -B build
+    mkdir -p build/Debug
+    cmake -DCMAKE_BUILD_TYPE=Debug -B build/Debug
+    cmake --build build/Debug
 else
-    cmake -DCMAKE_BUILD_TYPE=Release -B build
+    mkdir -p build/Debug
+    cmake -DCMAKE_BUILD_TYPE=Release -B build/Release
+    cmake --build build/Release
 fi
-
-cmake --build build
