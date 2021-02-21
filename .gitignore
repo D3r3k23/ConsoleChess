@@ -1,5 +1,6 @@
-build**/
-.vscode**/
+**/build
+**/.vscode
 
-saves**/
-logs**/
+*.log
+*.drk
+!starting_position.drk
