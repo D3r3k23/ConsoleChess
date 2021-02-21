@@ -1,3 +1,3 @@
 # ConsoleChess
 
-### Console Chess application that uses DrkEngine
+### Console chess application that uses DrkEngine
