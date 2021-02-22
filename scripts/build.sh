@@ -3,11 +3,13 @@ if [[ $1 == "-d" ]]; then
 fi
 
 if [[ "$debug" == true ]]; then
-    mkdir -p build/Debug
-    cmake -DCMAKE_BUILD_TYPE=Debug -B build/Debug
-    cmake --build build/Debug
+    build_type = "Debug"
 else
-    mkdir -p build/Debug
-    cmake -DCMAKE_BUILD_TYPE=Release -B build/Release
-    cmake --build build/Release
+    build_type = "Release"
 fi
+
+build_dir = "build/${build_type}"
+
+mkdir -p $build_dir
+cmake -DCMAKE_BUILD_TYPE=$build_type -B $build_dir
+cmake --build $build_dir

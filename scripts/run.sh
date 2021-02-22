@@ -3,13 +3,15 @@ if [[ $1 == "-d" ]]; then
 fi
 
 if [[ "$debug" == true ]]; then
-    executable_path="build/Debug/bin/ConsoleChess"
+    build_type = "Debug"
 else
-    executable_path="build/Release/bin/ConsoleChess"
+    build_type = "Release"
 fi
+
+executable_path="build/${build_type}/bin/ConsoleChess"
 
 if [[ -x $executable_path ]]; then
     ./$executable_path
 else
-    echo "Executable: $executable_path does not exist."
+    echo "Executable: ${executable_path} does not exist."
 fi

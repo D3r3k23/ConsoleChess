@@ -5,4 +5,5 @@ ConsoleChess
     Application.cpp
     MainMenu.cpp
     Game.cpp
+    Saves.cpp
 )
