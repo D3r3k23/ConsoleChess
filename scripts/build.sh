@@ -1,3 +1,4 @@
+
 if [[ $1 == "-d" ]]; then
     debug=true
 fi
