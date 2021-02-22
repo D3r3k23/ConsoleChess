@@ -3,9 +3,9 @@ if [[ $1 == "-d" ]]; then
 fi
 
 if [[ "$debug" == true ]]; then
-    build_type = "Debug"
+    build_type="Debug"
 else
-    build_type = "Release"
+    build_type="Release"
 fi
 
 executable_path="build/${build_type}/bin/ConsoleChess"
