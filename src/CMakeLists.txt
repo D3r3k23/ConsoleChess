@@ -1,6 +1,6 @@
 
 target_sources(ConsoleChess
-  PUBLIC
+  PRIVATE
     Main.cpp
     Application.cpp
     MainMenu.cpp
