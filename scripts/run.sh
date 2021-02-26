@@ -1,9 +1,5 @@
 
 if [[ $1 == "-d" ]]; then
-    debug=true
-fi
-
-if [[ "$debug" == true ]]; then
     build_type="Debug"
 else
     build_type="Release"
