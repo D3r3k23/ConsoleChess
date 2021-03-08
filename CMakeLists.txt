@@ -2,6 +2,8 @@
 cmake_minimum_required(VERSION 3.16)
 project(ConsoleChess)
 
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
 add_executable(ConsoleChess)
 target_include_directories(ConsoleChess PRIVATE inc)
 add_subdirectory(src)
