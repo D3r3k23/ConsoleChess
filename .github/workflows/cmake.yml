@@ -1,0 +1,17 @@
+
+name: CMake Compilation
+on: [push]
+
+env:
+  BUILD_TYPE: Debug
+
+jobs:
+  Build:
+    runs-on ubuntu-latest
+    steps:
+    -  uses: actions/checkout@v2
+
+    - name: Build ConsoleChess
+      working-directory: .
+      shell: bash
+      run: scripts/build.sh -d
