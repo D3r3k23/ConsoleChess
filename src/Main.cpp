@@ -4,7 +4,7 @@
 
 int main(int argc, char* argv[])
 {
-    DRK_LOGGER_INIT("ConsoleChess");
+    // DRK_LOGGER_INIT("ConsoleChess");
 
     Application app;
     app.run();

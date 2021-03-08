@@ -7,7 +7,7 @@ fi
 
 executable_path="build/${build_type}/bin/ConsoleChess"
 
-if [[ -x $executable_path ]]; then
+if [[ -f $executable_path ]]; then
     ./$executable_path
 else
     echo "Executable: ${executable_path} does not exist."
