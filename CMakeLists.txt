@@ -1,7 +1,7 @@
 
+message("${CMAKE_BUILD_TYPE} build.")
 cmake_minimum_required(VERSION 3.16)
 project(ConsoleChess)
-message("${CMAKE_BUILD_TYPE} build.")
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
