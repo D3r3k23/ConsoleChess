@@ -8,10 +8,6 @@
 #include "MainMenu.hpp"
 #include "Game.hpp"
 
-#include <iostream>
-#include <string>
-#include <fstream>
-
 
 class Application
 {

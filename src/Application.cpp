@@ -1,6 +1,8 @@
 
 #include "Application.hpp"
 
+#include <iostream>
+
 
 Application::Application(void)
 {
