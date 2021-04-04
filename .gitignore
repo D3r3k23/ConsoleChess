@@ -1,8 +1,7 @@
 
-.vscode/
-.VSCodeCounter/
-build/
+/.vscode/
+/.VSCodeCounter/
+/build/
 
-logs/
-saves/
-
+/logs/
+/saves/
