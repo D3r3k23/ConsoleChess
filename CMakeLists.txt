@@ -28,6 +28,11 @@ target_compile_options(ConsoleChess
     -Wextra
 )
 
+target_compile_definitions(DrkEngine
+  PUBLIC
+    DRK_EN_CL_TOOLS
+)
+
 set(OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin")
 set_target_properties(ConsoleChess DrkEngine
   PROPERTIES
