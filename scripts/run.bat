@@ -1,4 +1,3 @@
-
 @echo off
 
 set executable_path=build\bin\

@@ -1,4 +1,3 @@
-
 #include "Application.hpp"
 
 #include <iostream>
